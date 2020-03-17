@@ -1,9 +1,10 @@
 describe('Verify whether webdriveruniversity link on homepage wok correctly', function(){
-    it('Check contact us button opens the contact us page', function(done) {
+    it.skip('Check contact us button opens the contact us page', function(done) {
         browser.url('/');
         var title = browser.getTitle();
         expect(title).to.equal('WebDriverUniversity.com');
         console.log('Title is: ' + title);
+        browser.debug();
         browser.click('#contact-us');
     });
     
